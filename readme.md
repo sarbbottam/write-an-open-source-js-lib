@@ -139,7 +139,17 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Releasing a new version to npm
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-releasing-a-new-version-to-npm)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-releasing-a-new-version-to-npm)
+- make the update
+- update the version `$ npm version <patch|minor|major>`
+  - `patch` for bug fix
+  - `minor` for new feature
+  - `major` for breaking changes
+- commit the changes
+- tag to the commit.
+- push that to GitHub
+- push the tags to GitHub
+- `$ npm publish`
 
 ## Publishing a beta version
 
