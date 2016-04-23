@@ -1,0 +1,48 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test #
+########
+coverage
+test-results.xml
+
+# Generated files #
+###################
+out
+dist
+example/main.js
+
+# Node #
+########
+node_modules
+
+# Logs and databases #
+######################
+logs
+*.log
+*.sql
+*.sqlite
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Runtime data #
+################
+pids
+*.pid
+*.seed
