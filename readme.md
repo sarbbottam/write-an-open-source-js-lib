@@ -211,7 +211,17 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Writing conventional commits with commitizen
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-writing-conventional-commits-with-commitizen)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-writing-conventional-commits-with-commitizen)
+- commit message [convention](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines)
+- `$ npm i -D commitizen cz-conventional-changelog`
+  - install `commitizen` globally  or add `./node_modules/bin` to system `PATH` [to use `git cz` instead of `git commit`](https://github.com/commitizen/cz-cli#installing-the-command-line-tool)
+  - alternatively you could use `npm scripts`, `{"scripts": { "commit": "git-cz" } }`
+- configure `commitizen` with czConfig and specify path to the `cz-conventional-changelog`.
+```
+"czConfig": {
+  "path": "node_modules/cz-conventional-changelog"
+}
+```
 
 ## Committing a new feature with commitizen
 
