@@ -126,7 +126,16 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Releasing a version to GitHub
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-releasing-a-version-to-github)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-releasing-a-version-to-github)
+- add a version tag to git repository
+  - to associate the version released at npm to the corresponding code
+- `tag` in git point to a specific commit
+- `$ git tag <version>`
+  - <version> released to npm
+- `$ git push --tags`
+  - GitHub will consider the tag as release and will make it available under `releases` tab
+- draft new release
+  - fill out the release form with the tag version
 
 ## Releasing a new version to npm
 
