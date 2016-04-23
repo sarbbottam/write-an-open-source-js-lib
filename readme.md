@@ -167,7 +167,26 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Setting up Unit Testing with Mocha and Chai
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-setting-up-unit-testing-with-mocha-and-chai)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-setting-up-unit-testing-with-mocha-and-chai)
+- `$ npm i -D mocha chai`, to install and add them to `devDependencies`
+- create a test file
+  - `require(chai)`
+  - `require` the file to be tested
+
+  ```js
+  var expect = require('chai').expect;
+  var functionality = required('./path/to/index.js');
+
+  describe('functionality', function() {
+    it('should validate the functionality', function() {
+      expect(true).to.be.true;
+    });
+  });
+  ```
+- update `package.json/script.test`
+  - `{"scripts": { "test": "mocha path/to/test/file" } }`
+  - add `-w` to watch for changes
+- `$ npm test` to run test
 
 ## Unit Testing with Mocha and Chai
 
