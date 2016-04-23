@@ -190,7 +190,9 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Unit Testing with Mocha and Chai
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-unit-testing-with-mocha-and-chai)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-unit-testing-with-mocha-and-chai)
+- use the `global` `describe` function and `it` function to describe the tests and what they should do
+- validate functionalities by assertions using `expect`
 
 ## Automating Releases with semantic-release
 
