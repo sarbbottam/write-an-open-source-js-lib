@@ -225,7 +225,10 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Committing a new feature with commitizen
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-committing-a-new-feature-with-commitizen)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-committing-a-new-feature-with-commitizen)
+- make changes to `source` and `test`
+- use `commitizen` to commit with conventional message
+- push the changes to GitHub
 
 ## Automatically Releasing with TravisCI
 
