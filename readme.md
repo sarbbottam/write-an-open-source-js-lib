@@ -116,7 +116,13 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Publishing to npm
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-publishing-to-npm)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-publishing-to-npm)
+- `$ npm add-user`, if you have not already
+- `$ npm version <patch|minor|major>`, if you have already published to npm
+  - `patch` for bug fix
+  - `minor` for new feature
+  - `major` for breaking changes
+- `$ npm publish`
 
 ## Releasing a version to GitHub
 
