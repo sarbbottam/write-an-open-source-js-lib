@@ -107,7 +107,12 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Pushing to GitHub
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-pushing-to-github)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-pushing-to-github)
+- create a .gitignore to list all the ignored files and directories
+- `$ git add <file-name>` to stage the changes
+- `$ git commit` to commit the changes
+- `$ git push origin <repo-name>` to push the changes to GitHub(`origin`)
+  - `$ git remote -v` will display all the available `remote` and its corresponding `url`
 
 ## Publishing to npm
 
