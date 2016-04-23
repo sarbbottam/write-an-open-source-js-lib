@@ -98,7 +98,12 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Creating the library and adding dependencies
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-creating-the-library-and-adding-dependencies)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-creating-the-library-and-adding-dependencies)
+- create the main file
+- install required dependencies
+  - use `-S` or `--save` to save it as `dependency` at `package.json`
+  - use `-D` or `--save-dev` to save it as `devDependency` at `package.json`
+- create the functionality
 
 ## Pushing to GitHub
 
