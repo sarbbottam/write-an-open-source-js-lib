@@ -42,7 +42,28 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Introduction to How to Write an Open Source JavaScript Library
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-introduction)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-introduction)
+- micro libraries
+  - pros
+    - small enough to reason about the code
+    - easy to test as there is less code
+    - easy to reuse via `npm install`
+  - cons
+    - managing dependencies as there could be too many
+
+- learn
+  - create a Git repository
+  - host it on GitHub
+  - create the library
+  - publish it to npm
+  - create a full test suite for it using
+    - karma
+    - mocha
+    - chai
+  - set up continuous integration
+  - add ES6 or ES2015 using Babel
+  - integrate webpack
+  - distribute this as both browser and node consumable
 
 ## Setting up GitHub
 
