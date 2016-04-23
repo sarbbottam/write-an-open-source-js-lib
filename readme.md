@@ -153,7 +153,17 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Publishing a beta version
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-publishing-a-beta-version)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-publishing-a-beta-version)
+- make changes
+- manually update the package version in `package.json`
+  - add `-beta.0` to the end of the version
+- `$ git checkout -b <branch-name>` for the beta version
+- `$ git tag <packge-version-beta.0>`
+- `$ git push origin <branch-name>`
+- `$ git push --tags`
+- `$ npm publish --tag beta`
+- verify published versions
+  - `$ npm info`
 
 ## Setting up Unit Testing with Mocha and Chai
 
