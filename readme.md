@@ -196,7 +196,18 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Automating Releases with semantic-release
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-automating-releases-with-semantic-release)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-automating-releases-with-semantic-release)
+- `semantic-release` automates the releasing and avoid redundant manual steps.
+- `$ npm i -g semantic-release-cli` to install `semantic-release-cli` globally
+- `$ semantic-release setup`
+  - it will take you through the interactive prompt
+  - it will create a `travis.yml` if the CI system chosen, is travis.
+  - it will update `package.json/script` w.r.t `release`
+  - it will remove the `version` from `package.json`
+    - as the version will be determied dynamically from the commit messages
+- this `script` will be executed on `success`
+- update `travis.yml` to run tests prior releasing
+- update the `package.json/version` to `0.0.0-sematically-released`, to avoid `npm` warning
 
 ## Writing conventional commits with commitizen
 
