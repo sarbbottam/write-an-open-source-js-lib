@@ -75,7 +75,26 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Configuring npm and creating a package.json
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-configuring-npm-and-creating-a-package-json)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-configuring-npm-and-creating-a-package-json)
+- install node if not already installed
+- configure npm locally to make publishing a little easier, for example
+  - `$ npm set init-author-name "Sarbbottam Bandyopadhyay"
+  - `$ npm set init-author-url "https://sarbbottam.github.io/"`
+  - `$ npm set init-author-email "sarbbottam@gmail.com"`
+  - `$ npm set init-license "MIT"`
+- this will be used as default values during `npm init`
+- verify configuartion
+  - `$ cat ~/.npmrc`
+- refer https://docs.npmjs.com/misc/config for more information
+- recommended setting
+  - save-exact property, it tells `npm` to use the exact version, rather than a version range, while saving dependency to package.json.
+  - it safeguards when semver is not followed properly or there's a mistake in a release.
+- create a npm account if you don't have one at [npmjs.com](https://www.npmjs.com/)
+- `$ npm add-user` to add your account
+  - enter username, password, and email when prompted
+- it will create your `auth token` and add it to `~/.npmrc`
+- `$ npm init` will prompt for desired information and create `package.json` at the end
+- `$ npm init --yes` will create a `package.json` with out prompting with the defaults
 
 ## Creating the library and adding dependencies
 
