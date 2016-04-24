@@ -53,7 +53,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
   - cons
     - managing dependencies as there could be too many
 
-- learn
+- objective of the course / learn to
   - create a Git repository
   - host it on GitHub
   - create the library
