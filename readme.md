@@ -70,10 +70,10 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 ## Setting up GitHub
 
 [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-setting-up-github)
-- create a GitHub account if you don't have one
+- create a GitHub account, if you don't have one
 - sign in to your account and create a new repository
-- follow the instructions displayed on creating the repository to push your code to that repository
-- that's all GitHub setup is complete
+- follow the instructions displayed after creating the repository, to push your code to that repository
+- that's all! GitHub setup is complete
 
 ## Configuring npm and creating a package.json
 
