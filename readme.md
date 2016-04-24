@@ -248,7 +248,12 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Adding code coverage recording with Istanbul
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-code-coverage-recording-with-istanbul)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-code-coverage-recording-with-istanbul)
+- `$ npm i istanbul`
+- update `package.json/script.test`
+  - `{"scripts": { "test": "istanbul cover -x test-file-name-pattern _mocha -- path/to/test/file -R spec" } }`
+- `$ npm test` will run the test and generate coverage information at `coverage/` folder
+- add `coverage` to `.gitignore` file
 
 ## Adding code coverage checking
 
