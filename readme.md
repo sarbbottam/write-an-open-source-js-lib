@@ -110,11 +110,12 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 ## Pushing to GitHub
 
 [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-pushing-to-github)
-- create a .gitignore to list all the ignored files and directories
+- create a `.gitignore` at the `root` of the project, to list all the ignored files and directories
 - `$ git add <file-name>` to stage the changes
+  - alternatively [`$ git add --all`](https://github.com/sarbbottam/conf-files/blob/master/git-confs/gitconfig#L20) to stage all the changes
 - `$ git commit` to commit the changes
 - `$ git push origin <repo-name>` to push the changes to GitHub(`origin`)
-  - `$ git remote -v` will display all the available `remote` and its corresponding `url`
+  - `$ git remote -v` will display all the available `remote` and their corresponding `url`
 
 ## Publishing to npm
 
