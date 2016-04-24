@@ -286,7 +286,31 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Adding ES6 Support
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-es6-support)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-es6-support)
+- need a transpiler to write code with latest JavaScript specs
+- use [babel](http://babeljs.io/)
+- `$ npm i -D babel-cli` to install and add it to `package.json/devDependencies`
+- create a script called `build` to transpile ES6/ES2015 code to ES5
+  - `{"scripts": { "build": "babel --out-dir dist src" } }`
+  - you can use `-d` instead of `--out-dir`
+  - use `--copy-files` to copy dependencies
+    - `{"scripts": { "build": "babel --copy-files --out-dir dist src" } }`
+  - checkout [babel/setup/cli](http://babeljs.io/docs/setup/#cli) for further details
+- add a script called `prebuild` to clean the `dist` directory prior building
+  - `{"scripts": { "prebuild": "rimraf dist" } }`
+  - `$ npm i -D rimraf` to install and add it to `package.json/devDependencies`
+- install desired babel presets/plugin and add it to `package.json/devDependencies`
+  - `$ npm i -D babel-preset-es2015`
+  - `$ npm i -D babel-preset-stage-2`
+  - checkout [babel/pluglin](http://babeljs.io/docs/plugins/) for further details
+- create babel config
+  - either in a `.babelrc` file or in `package.json/babel`
+  - `.babelrc` - `$ echo '{ "presets": ["es2015", "stage-2] }' > .babelrc`
+  - `package.json` - `{ "babel" : { "presets": ["es2015", "stage-2] } }`
+- `$ npm run build` will create the transpiled code in `dist` folder
+- update `package.json/main` to refer `dist`
+- add `npm run build` to `travis.yml/script`
+- add `dist/` to `.gitignore`
 
 ## Adding ES6 Support to Tests using Mocha and Babel
 
