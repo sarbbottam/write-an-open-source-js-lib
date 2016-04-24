@@ -221,12 +221,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 - `$ npm i -D commitizen cz-conventional-changelog`
   - install `commitizen` globally  or add `./node_modules/bin` to system `PATH` [to use `git cz` instead of `git commit`](https://github.com/commitizen/cz-cli#installing-the-command-line-tool)
   - alternatively you could use `npm scripts`, `{"scripts": { "commit": "git-cz" } }`
-- configure `commitizen` with czConfig and specify path to the `cz-conventional-changelog`.
-```
-"czConfig": {
-  "path": "node_modules/cz-conventional-changelog"
-}
-```
+- [configure `commitizen`](https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly) via `{config": { "commitizen": { "path": "cz-conventional-changelog" } } }`
 
 ## Committing a new feature with commitizen
 
