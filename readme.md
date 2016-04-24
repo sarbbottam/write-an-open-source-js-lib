@@ -1,9 +1,11 @@
-Companion for [How to Write an Open Source JavaScript Library](https://egghead.io/series/how-to-write-an-open-source-javascript-library)
+Reference for [How to Write an Open Source JavaScript Library](https://egghead.io/series/how-to-write-an-open-source-javascript-library)
 ---
 
-Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-source-javascript-library), if you haven't already.
+The purpose of this document is to serve as a reference for:
 
-The purpose of this document is to serve as a ready reckoner of the  [How to Write an Open Source JavaScript Library](https://egghead.io/series/how-to-write-an-open-source-javascript-library)
+[How to Write an Open Source JavaScript Library](https://egghead.io/series/how-to-write-an-open-source-javascript-library) course by [Kent C. Dodds](https://github.com/kentcdodds)
+
+Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-source-javascript-library), if you haven't.
 
 ---
 
