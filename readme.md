@@ -317,7 +317,17 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Adding ES6 Support to Tests using Mocha and Babel
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-es6-support-to-tests-using-mocha-and-babel)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-es6-support-to-tests-using-mocha-and-babel)
+- `npm i -D babel-register` to install and add it to `package.json/devDependencies`
+- pass `babel-rgister` as the compiler to `mocha` and update `package.json/scripts.test`
+  - `{"scripts": { "test": "mocha path/to/test/file --compilers js:babel-register" } }``
+- `$ npm i -d nyc` to install and add it to `package.json/devDependencies`
+- add a script called `cover`
+  - `{"scripts": { "cover": "nyc npm test" } }``
+- update `ghook` and `travis/script` run `npm run cover` instead of `npm test`
+- replace `istanbul` with `nyc` at `package.json/scripts.check-coverage`
+  - `{"scripts": { "check-coverage": "nyc check-coverage --statement 100 --branches 100 --function 100 --lines 100" } }`
+- add [`.nyc_output`](https://github.com/bcoe/nyc/issues/197) to `.gitignore`
 
 ## Limit Built Branches on Travis
 
