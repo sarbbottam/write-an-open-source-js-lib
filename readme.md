@@ -118,10 +118,13 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-publishing-to-npm)
 - `$ npm add-user`, if you have not already
+- add `package.json/files` to [whitelist the set of files to be published](https://docs.npmjs.com/files/package.json#files)
+- you can also add `.npmignore` file to ignore files/directories, that might fall under from whitelist
 - `$ npm version <patch|minor|major>`, if you have already published to npm
   - `patch` for bug fix
   - `minor` for new feature
   - `major` for breaking changes
+- [`npm pack`](https://docs.npmjs.com/cli/pack) or [`npm link`](https://docs.npmjs.com/cli/link) to validate the module to be publish
 - `$ npm publish`
 
 ## Releasing a version to GitHub
