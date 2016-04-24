@@ -242,7 +242,9 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Automatically running tests before commits with ghooks
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-automatically-running-tests-before-commits-with-ghooks)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-automatically-running-tests-before-commits-with-ghooks)
+- `$ npm i -D ghooks` to install and add it to `package.json/devDependencies`
+- configure `ghooks` via the `{"config": {"ghooks": { "hook-name": "command-to-execute" } }`
 
 ## Adding code coverage recording with Istanbul
 
