@@ -244,7 +244,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 
 [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-automatically-running-tests-before-commits-with-ghooks)
 - `$ npm i -D ghooks` to install and add it to `package.json/devDependencies`
-- configure `ghooks` via the `{"config": {"ghooks": { "hook-name": "command-to-execute" } }`
+- configure `ghooks` via the `{"config": {"ghooks": { "hook-name": "command-to-execute" } } }`
 
 ## Adding code coverage recording with Istanbul
 
@@ -262,7 +262,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
   - `{"scripts": { "check-coverage": "istanbul check-coverage --statement 100 --branches 100 --function 100 --lines 100" } }`
 - add `npm run check-coverage` to `travis/script`
 - you can also add it to `git hooks`
-  - `{"config": {"ghooks": { "pre-commit": "npm test && npm run check-coverage" } }`
+  - `{"config": {"ghooks": { "pre-commit": "npm test && npm run check-coverage" } } }`
 
 ## Add code coverage reporting
 
