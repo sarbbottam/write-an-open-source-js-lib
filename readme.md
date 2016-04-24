@@ -331,7 +331,16 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Limit Built Branches on Travis
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-limit-built-branches-on-travis)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-limit-built-branches-on-travis)
+- add `branches` to  `travis.yml`
+```yml
+branches
+- only
+  - master
+```
+- `only` for whitelisting and `exclude` for blacklisting
+- `branch-name` (`master`) could also be a `regex`
+- travis will continue to build for pull requests
 
 ## Add a browser build to an npm module
 
