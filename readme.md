@@ -85,7 +85,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
   - `$ npm set init-author-email "sarbbottam@gmail.com"`
   - `$ npm set init-license "MIT"`
 - this will be used as default values during `npm init`
-- verify configuartion
+- verify configuration
   - `$ cat ~/.npmrc`
 - refer https://docs.npmjs.com/misc/config for more information
 - recommended setting
