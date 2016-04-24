@@ -277,7 +277,12 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Adding badges to your README
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-badges-to-your-readme)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-badges-to-your-readme)
+- check out [shields.io](http://shields.io/)
+- add badges via `[![alt text](badge-url)](link to the service)`
+  - for example: `[![build](https://img.shields.io/travis/<user-name>/<repo-name>.svg)](https://travis-ci.org/<user-name/organization-name>/<repo-name>)`
+- you can also pass the `style` query param to customize the style of the badge
+  - `https://img.shields.io/...svg?style=flat-square`
 
 ## Adding ES6 Support
 
