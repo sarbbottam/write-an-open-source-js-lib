@@ -266,7 +266,14 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Add code coverage reporting
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-add-code-coverage-reporting)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-add-code-coverage-reporting)
+- signup for [codecov.io](https://codecov.io/)
+- `$ npm i codecov.io -D`
+- create a script called `report-coverage` to report coverage to [codecov.io](https://codecov.io/).
+  - `{"scripts": { "report-coverage": cat ./coverage/lcov.info | codecov" } }`
+- add `npm run report-coverage` to `travis/after_success`
+- after successful build the reports will be pushed to [codecov.io/github/<user-name/organization-name>/<repo-name>](https://codecov.io/)
+- check out [codecov browser extension](https://www.youtube.com/watch?v=d6wJKODB8_g&feature=youtu.be)
 
 ## Adding badges to your README
 
