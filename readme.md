@@ -96,7 +96,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
   - enter username, password, and email when prompted
 - it will create your `auth token` and add it to `~/.npmrc`
 - `$ npm init` will prompt for desired information and create `package.json` at the end
-- `$ npm init --yes` will create a `package.json` with out prompting with the defaults
+- `$ npm init --yes` will create a `package.json`, with the defaults, with out prompting
 
 ## Creating the library and adding dependencies
 
