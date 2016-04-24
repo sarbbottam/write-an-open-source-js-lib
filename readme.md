@@ -257,7 +257,12 @@ The purpose of this document is to serve as a ready reckoner of the  [How to Wri
 
 ## Adding code coverage checking
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-code-coverage-checking)
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-adding-code-coverage-checking)
+- create a script called `check-coverage` to verify coverage for statements, branches, functions, and lines.
+  - `{"scripts": { "check-coverage": "istanbul check-coverage --statement 100 --branches 100 --function 100 --lines 100" } }`
+- add `npm run check-coverage` to `travis/script`
+- you can also add it to `git hooks`
+  - `{"config": {"ghooks": { "pre-commit": "npm test && npm run check-coverage" } }`
 
 ## Add code coverage reporting
 
