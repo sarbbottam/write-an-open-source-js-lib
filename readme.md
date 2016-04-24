@@ -344,5 +344,21 @@ branches
 
 ## Add a browser build to an npm module
 
-- [Direct link to the video tutorial](https://egghead.io/lessons/javascript-add-a-browser-build-to-an-npm-module)
-
+[Direct link to the video tutorial](https://egghead.io/lessons/javascript-add-a-browser-build-to-an-npm-module)
+- `$ npm i -D webpack`
+- create `webpack.config.babel.js`
+  - for example, checkout [getting-started/#config-file](http://webpack.github.io/docs/tutorials/getting-started/#config-file)
+- add `libraryTarget: 'umd'` to `output`
+- add `library: <library-name>` to `output`
+- add `devtool: 'source-map'` to main config
+- install [`loaders`](https://webpack.github.io/docs/using-loaders.html)
+  - `$ npm i -D bable-loader`
+ - rename the current `package.json/script.build` to `package.json/script.build:main`
+ - add `"build:umd": "webpack --output-filename <output-file-name>.umd.js"` to `package.json/script`
+ - add `"build:umd:min": "webpack --output-filename <output-file-name>.umd.min.js" -p` to `package.json/script`
+   - `-p` for production build, minify the code
+- `"build": "build:main && build:umd && build:umd:min"` to `package.json/script`
+- alternatively
+  - `$ npm i -D npm-run-all`
+  - `"build": "npm-run-all build:*"` to `package.json/script`
+- update `readme` to point to `https://npmcdn.com/<package-name>@<version>/path/to/umd/file`
