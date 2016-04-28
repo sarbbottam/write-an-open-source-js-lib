@@ -274,7 +274,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 - create a script called `report-coverage` to report coverage to [codecov.io](https://codecov.io/).
   - `{"scripts": { "report-coverage": cat ./coverage/lcov.info | codecov" } }`
 - add `npm run report-coverage` to `travis/after_success`
-- after successful build the reports will be pushed to [codecov.io/github/<user-name/organization-name>/<repo-name>](https://codecov.io/)
+- after successful build the reports will be pushed to [`codecov.io/github/<user-name/organization-name>/<repo-name>`](https://codecov.io/)
 - check out [codecov browser extension](https://www.youtube.com/watch?v=d6wJKODB8_g&feature=youtu.be)
 
 ## Adding badges to your README
