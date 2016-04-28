@@ -236,9 +236,9 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 
 [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-automatically-releasing-with-travisci)
 - travis build is automatically setup by semantic-release
-  - if for some reason it is not enabled, manually sync github repo and enable travis build
-- if the build is successful travis will run `semantic-release`
-- depending on the commit messages `semantic-release` would
+  - if for some reason it is not enabled, manually sync github repo and enable travis build at `https://travis-ci.org/profile/<user-name>`
+- if the build is successful, travis will run `semantic-release`
+- depending on the commit messages, `semantic-release` would
   - push a new version to npm
   - push a new tag and release to github along with change history since the previous version
 
