@@ -136,9 +136,9 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-releasing-a-version-to-github)
 - add a version tag to git repository
   - to associate the version released at npm to the corresponding code
-- `tag` in git point to a specific commit
+- `tag` in git, points to a specific commit
 - `$ git tag <version>`
-  - <version> released to npm
+  - `<version>` released to npm
 - `$ git push --tags`
   - GitHub will consider the tag as release and will make it available under `releases` tab
 - draft new release
