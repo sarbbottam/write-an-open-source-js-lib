@@ -147,14 +147,14 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 ## Releasing a new version to npm
 
 [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-releasing-a-new-version-to-npm)
-- make the update
-- update the version `$ npm version <patch|minor|major>`
+- make necessary updates
+- update the `package.json/version` `$ npm version <patch|minor|major>`
   - `patch` for bug fix
   - `minor` for new feature
   - `major` for breaking changes
-- commit the changes
-- tag to the commit.
-- push that to GitHub
+- `commit` the changes
+- `tag` the commit.
+- push changes to GitHub
 - push the tags to GitHub
 - `$ npm publish`
 
