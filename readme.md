@@ -204,7 +204,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
 ## Automating Releases with semantic-release
 
 [Direct link to the video tutorial](https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-automating-releases-with-semantic-release)
-- `semantic-release` automates the releasing and avoid redundant manual steps.
+- `semantic-release` automates the releasing and frees you from redundant manual steps.
 - `$ npm i -g semantic-release-cli` to install `semantic-release-cli` globally
 - `$ semantic-release setup`
   - it will take you through the interactive prompt
