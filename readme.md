@@ -129,6 +129,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
   - `major` for breaking changes
 - [`npm pack`](https://docs.npmjs.com/cli/pack) or [`npm link`](https://docs.npmjs.com/cli/link) to validate the module to be publish
 - `$ npm publish`
+- verify the released package at `npm.im/<package-name>`
 
 ## Releasing a version to GitHub
 
