@@ -351,7 +351,7 @@ branches
 - add `library: <library-name>` to `output`
 - add `devtool: 'source-map'` to main config
 - install [`loaders`](https://webpack.github.io/docs/using-loaders.html)
-  - `$ npm i -D bable-loader`
+  - `$ npm i -D babel-loader`
  - rename the current `package.json/script.build` to `package.json/script.build:main`
  - add `"build:umd": "webpack --output-filename <output-file-name>.umd.js"` to `package.json/script`
  - add `"build:umd:min": "webpack --output-filename <output-file-name>.umd.min.js" -p` to `package.json/script`
