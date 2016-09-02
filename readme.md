@@ -360,4 +360,4 @@ branches
 - alternatively
   - `$ npm i -D npm-run-all`
   - `"build": "npm-run-all build:*"` to `package.json/script`
-- update `readme` to point to `https://npmcdn.com/<package-name>@<version>/path/to/umd/file`
+- update `readme` to point to `https://unpkg.com/<package-name>@<version>/path/to/umd/file`
