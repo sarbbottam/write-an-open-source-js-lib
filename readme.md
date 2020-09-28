@@ -211,7 +211,7 @@ Watch the series at [egghead.io](https://egghead.io/series/how-to-write-an-open-
   - it will create a `travis.yml` if the CI system chosen, is travis.
   - it will update `package.json/script` w.r.t `release`
   - it will remove the `version` from `package.json`
-    - as the version will be determied dynamically from the commit messages
+    - as the version will be determined dynamically from the commit messages
 - this `script` will be executed on `success`
 - update `travis.yml` to run tests prior releasing
 - update the `package.json/version` to `0.0.0-sematically-released`, to avoid `npm` warning
